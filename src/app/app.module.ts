@@ -14,7 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgModule
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
