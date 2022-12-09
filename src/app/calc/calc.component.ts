@@ -20,7 +20,7 @@ export class CalcComponent implements OnInit {
     try {
       this.result = (eval(this.screenValue)).toString();
       if (this.result === 'Infinity') {
-        this.screenValue = 'Divisão por 0 é inválida!';
+        this.screenValue = 'Error!';
       } else {
         this.historic.push({count: this.screenValue, result: this.result});
         this.screenValue = this.result;
