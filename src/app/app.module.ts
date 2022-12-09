@@ -6,19 +6,19 @@ import { CommonModule } from '@angular/common';
 //Componentes
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CalcComponent } from './calc/calc.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MainPageModule } from './cuerpoCalc/main-page.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CalcComponent
+    AppComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    MainPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

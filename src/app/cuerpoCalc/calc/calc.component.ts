@@ -27,7 +27,7 @@ export class CalcComponent implements OnInit {
       }
     } catch (error) {
       this.clean();
-      alert('Um erro ocorreu: ' + error.message);
+      alert('Ha ocurrido un error: ' + error.message);
     }
   }
 

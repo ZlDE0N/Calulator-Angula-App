@@ -1,9 +1,7 @@
 <main>
-    <section>
-        <div class="row">
-            <textarea class="form-control" type="text" [value]="screenValue" readonly></textarea>
-        </div>
-    </section>
+    <!-- Screen component -->
+    <app-screen [screenValue]="screenValue"></app-screen>
+    <!-- End Screen component -->
     <section>
         <div class="row">
             <button id="cls" class="btn btn-primary bigB" (click)="clean()"><strong>C</strong></button>
