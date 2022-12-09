@@ -2,7 +2,7 @@
   "name": "calc",
   "version": "0.0.0",
   "scripts": {
-    "ngcc":"ngcc –properties es2015 browser main module –async false –first-only","postinstall": "npm run ngcc",
+    "ngcc":"ngcc –properties es2015 browser main module –async false –first-only",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -21,9 +21,9 @@
     "@angular/platform-browser": "^15.0.3",
     "@angular/platform-browser-dynamic": "^15.0.3",
     "@angular/router": "^15.0.3",
-    "@ng-bootstrap/ng-bootstrap": "^7.0.0",
-    "bootstrap": "^4.5.0",
-    "bootstrap-icons": "^1.0.0-alpha5",
+    "@ng-bootstrap/ng-bootstrap": "14.0.0",
+    "bootstrap": "5.2.3",
+    "bootstrap-icons": "^1.10.2",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
