@@ -12,13 +12,27 @@ export class CalcComponent implements OnInit {
   result = '';
   historic: object[] = [];
 
-  add(value): void {
-    this.screenValue += value;
+
+  agregarNuevoNumero(value: any) {
+    this.screenValue += value
   }
 
+  borrarNumero(){
+    this.screenValue = '';
+  }
+
+  erase(){
+    this.screenValue = this.screenValue.slice(0, -1);
+    console.log('Borrando')
+  }
+
+  clean(): void {
+    this.screenValue = '';
+  }
+  //-------Evaluacion de expresiones----------
   equal(): void {
+    this.result = (eval(this.screenValue)).toString();
     try {
-      this.result = (eval(this.screenValue)).toString();
       if (this.result === 'Infinity') {
         this.screenValue = 'Error!';
       } else {
@@ -29,19 +43,16 @@ export class CalcComponent implements OnInit {
       this.clean();
       alert('Ha ocurrido un error: ' + error.message);
     }
-  }
+  }  
+  //---------Final de Evaluar Expresiones----------
 
-  clean(): void {
-    this.screenValue = '';
-  }
 
-  erase(): void{
-    this.screenValue = this.screenValue.slice(0, -1);
-  }
+  //-------------Historic Section
   constructor(private modalService: NgbModal) {}
 
   open(content): void {
     this.modalService.open(content, {ariaLabelledBy: 'calculator-history'});
+    console.log('mensaje de modal de calc.component')
   }
 
   ngOnInit(): void {
