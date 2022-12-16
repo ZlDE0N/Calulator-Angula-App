@@ -2,6 +2,13 @@ section{
     margin-right: 0.3em;
 }
 
+textarea{
+    resize: none;
+    margin-left: 0.3em;
+    height: 6em;
+    margin-bottom: 0.8em;
+}
+
 .row{
     margin-bottom: 0.3em;
 }

@@ -1,17 +1,18 @@
 <main>
-    <!-- Screen component -->
+    <!-- Screen component (hijo)-->
     <app-screen [screenValue]="screenValue"></app-screen>
     <!-- End Screen component -->
 
-    <!-- Buttons section -->
-    <app-buttons [historic]="historic" (onNuevoNumero)="agregarNuevoNumero($event)" (onBorrarNumero)="borrarNumero()" (onEraseNumber)="erase()" (onModalHistorial)="open($event)"></app-buttons>
-    
+    <!-- Buttons section (hijo)-->
+    <app-buttons (onNuevoNumero)="agregarNuevoNumero($event)" (onBorrarNumeros)="borrarNumero()" (onEraseNumber)="erase()"></app-buttons>
     <!-- Equal Button For Operations -->
     <div class="row position-relative" style="left: 10em; bottom: 3.3em;"> 
         <button class="btn btn-primary smallB" (click)="equal()">=</button>
-     </div>
+    </div>
     <!-- End Equal Button -->
 
+    <!-- Boton de cambio de pagina -->
+    <!-- <button RouterLink="historial" (click)="navegar()">Historial</button> -->
     <!-- End button section -->
 </main>
 
